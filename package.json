@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-dx",
+  "name": "vite-plugin-vue-dx",
   "type": "module",
   "version": "0.0.1",
   "description": "Improves dx by using various vite plugins out of the box",
@@ -7,6 +7,7 @@
   "license": "MIT",
   "keywords": [
     "vite-plugin",
+    "vue",
     "dx"
   ],
   "exports": {

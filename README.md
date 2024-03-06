@@ -1,4 +1,4 @@
-# vite-plugin-dx (wip)
+# vite-plugin-vue-dx (wip)
 
 This plugin is a collection of various plugins combined. The goal is to improve dx and remove the hassle of setting everything manually
 
