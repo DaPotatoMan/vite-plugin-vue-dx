@@ -26,6 +26,7 @@
     "build": "unbuild"
   },
   "dependencies": {
+    "@antfu/utils": "^0.7.7",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-icons": "^0.18.5",
     "unplugin-turbo-console": "^1.4.0",
@@ -35,7 +36,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
-    "@antfu/utils": "^0.7.7",
     "eslint": "^8.57.0",
     "type-fest": "^4.10.3",
     "typescript": "^5.2.2",
