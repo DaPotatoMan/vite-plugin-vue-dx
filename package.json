@@ -24,7 +24,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "unbuild"
+    "build": "unbuild",
+    "prepack": "pnpm unbuild",
+    "release": "changelogen --release && git push --follow-tags && npm publish",
+    "prerelease": "changelogen --prerelease --release && git push --follow-tags && npm publish --tag rc"
   },
   "dependencies": {
     "@antfu/utils": "^0.7.7",
@@ -38,6 +41,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.4",
+    "changelogen": "^0.5.5",
     "eslint": "^8.57.0",
     "type-fest": "^4.10.3",
     "typescript": "^5.2.2",
