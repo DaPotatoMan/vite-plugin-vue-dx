@@ -5,13 +5,15 @@
   ],
   "packageRules": [
     {
+      "automerge": true,
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-non-major",
       "matchUpdateTypes": [
         "minor",
         "patch",
         "pin",
         "digest"
-      ],
-      "automerge": true
+      ]
     }
   ]
 }
