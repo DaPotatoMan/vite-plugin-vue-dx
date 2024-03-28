@@ -1,18 +1,31 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:base",
+    "group:allNonMajor",
+    ":semanticCommitTypeAll(chore)"
   ],
+  "meteor": {
+    "enabled": false
+  },
+  "rangeStrategy": "bump",
+  "npm": {
+    "commitMessageTopic": "{{prettyDepType}} {{depName}}"
+  },
   "packageRules": [
     {
-      "automerge": true,
-      "groupName": "all non-major dependencies",
-      "groupSlug": "all-non-major",
       "matchUpdateTypes": [
         "minor",
         "patch",
         "pin",
         "digest"
+      ],
+      "automerge": true,
+      "automergeSchedule": [
+        "after 1am and before 2am"
+      ],
+      "schedule": [
+        "after 2am and before 3am"
       ]
     }
   ]
