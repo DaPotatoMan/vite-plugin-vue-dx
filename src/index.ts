@@ -1,14 +1,6 @@
-import * as DX from './exports'
+import { components, console, devtools, imports, jsx } from './exports'
 
-export * from './exports'
-
-const plugins = {
-  devtools: DX.devtools,
-  console: DX.console,
-  jsx: DX.jsx,
-  imports: DX.imports,
-  components: DX.components,
-}
+const plugins = { components, console, devtools, imports, jsx }
 
 type PluginMap = typeof plugins
 
@@ -33,3 +25,5 @@ export function VueDX(config: Partial<Config> = {}) {
 
   return list
 }
+
+export * from './exports'
