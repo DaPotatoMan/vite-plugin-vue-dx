@@ -1,3 +1,5 @@
+import { FontaineTransform } from 'fontaine'
+
 export {
   /** Vue JSX using {@link https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue-jsx @vitejs/plugin-vue-jsx} */
   default as jsx,
@@ -24,3 +26,6 @@ export {
   /** Auto imports using {@link https://github.com/unplugin/unplugin-auto-import unplugin-auto-import} */
   default as imports,
 } from 'unplugin-auto-import/vite'
+
+/** Improve font loading using {@link https://github.com/unjs/fontaine fontaine} */
+export const fontaine = FontaineTransform.vite

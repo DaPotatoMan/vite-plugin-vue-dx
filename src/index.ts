@@ -1,6 +1,6 @@
-import { components, console, devtools, imports, jsx } from './exports'
+import { components, console, devtools, fontaine, imports, jsx } from './exports'
 
-const plugins = { components, console, devtools, imports, jsx }
+const plugins = { components, console, devtools, fontaine, imports, jsx }
 
 type PluginMap = typeof plugins
 
