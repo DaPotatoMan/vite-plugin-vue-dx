@@ -1,18 +1,11 @@
-import type { Plugin } from 'vite'
+import * as DX from './exports'
+import { type Plugin, applyPlugin } from './utils'
 
-import VueJsx from '@vitejs/plugin-vue-jsx'
-import VueDevTools, { type VitePluginVueDevToolsOptions } from 'vite-plugin-vue-devtools'
-import TurboConsole from 'unplugin-turbo-console/vite'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { applyPlugin } from './utils'
-
-// Export resolvers
-export * from 'unplugin-vue-components/resolvers'
+export * from './exports'
 
 export interface Config {
   /** {@link https://devtools-next.vuejs.org/ devtools-next} */
-  devtools: VitePluginVueDevToolsOptions
+  devtools: import('vite-plugin-vue-devtools').VitePluginVueDevToolsOptions
 
   /** {@link https://github.com/unplugin/unplugin-turbo-console unplugin-turbo-console} */
   console: import('unplugin-turbo-console/types').Options
@@ -29,11 +22,11 @@ export interface Config {
 
 export default (config: Partial<Config>): Plugin[] => {
   return [
-    VueDevTools(config.devtools),
-    TurboConsole(config.console),
-    applyPlugin(VueJsx, config.jsx, undefined, true),
-    applyPlugin(AutoImport, config.autoimport, undefined, true),
-    applyPlugin(Components, config.components, undefined, true),
+    DX.VueDevTools(config.devtools),
+    DX.TurboConsole(config.console),
+    applyPlugin(DX.VueJSX, config.jsx, undefined, true),
+    applyPlugin(DX.Imports, config.autoimport, undefined, true),
+    applyPlugin(DX.Components, config.components, undefined, true),
   ]
     .flatMap(e => e)
 }

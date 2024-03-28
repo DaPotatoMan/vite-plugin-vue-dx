@@ -2,6 +2,8 @@ import type { Plugin } from 'vite'
 import type { PartialDeep } from 'type-fest'
 import { deepMerge } from '@antfu/utils'
 
+export type { Plugin }
+
 export function applyPlugin<
   T extends (...args: any[]) => Plugin,
   Config extends Parameters<T>[0] | false,
