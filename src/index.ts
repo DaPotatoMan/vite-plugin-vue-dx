@@ -1,15 +1,13 @@
-import type { Plugin } from 'vite'
 import * as DX from './exports'
 
 export * from './exports'
 
 const plugins = {
-  devtools: DX.VueDevTools,
-  console: DX.TurboConsole,
-
-  jsx: DX.VueJSX,
-  imports: DX.Imports,
-  components: DX.Components,
+  devtools: DX.devtools,
+  console: DX.console,
+  jsx: DX.jsx,
+  imports: DX.imports,
+  components: DX.components,
 }
 
 type PluginMap = typeof plugins
@@ -18,7 +16,7 @@ type Config = {
   [K in keyof PluginMap]: Parameters<PluginMap[K]>[0] | false
 }
 
-export function VueDX(config: Partial<Config>): Plugin[] {
+export function VueDX(config: Partial<Config>) {
   const list: any[] = []
 
   for (const [key, plugin] of Object.entries(plugins)) {
