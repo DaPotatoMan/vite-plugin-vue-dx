@@ -4,11 +4,11 @@ const plugins = { components, console, devtools, imports, jsx }
 
 type PluginMap = typeof plugins
 
-type Config = {
+export type VueDXConfig = Partial<{
   [K in keyof PluginMap]: Parameters<PluginMap[K]>[0] | false
-}
+}>
 
-export function VueDX(config: Partial<Config> = {}) {
+export function VueDX(config: VueDXConfig = {}) {
   const list: any[] = []
 
   for (const [key, plugin] of Object.entries(plugins)) {
