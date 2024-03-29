@@ -27,5 +27,7 @@ export {
   default as imports,
 } from 'unplugin-auto-import/vite'
 
+export type ImportPresets = Parameters<typeof import('unplugin-auto-import')['default']['vite']>[0]['imports']
+
 /** Improve font loading using {@link https://github.com/unjs/fontaine fontaine} */
 export const fontaine = FontaineTransform.vite
