@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-vue-dx",
   "type": "module",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Improves dx by using various vite plugins out of the box",
   "author": "Fahadul Islam @dapotatoman",
   "license": "MIT",
