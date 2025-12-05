@@ -28,6 +28,7 @@
     "build": "unbuild",
     "prepack": "pnpm unbuild",
     "lint": "eslint .",
+    "prepublish": "npm run lint",
     "release": "changelogen --release && git push --follow-tags && npm publish",
     "prerelease": "changelogen --prerelease --release && git push --follow-tags && npm publish --tag rc"
   },
