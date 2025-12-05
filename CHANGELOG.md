@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4-1
+
+[compare changes](https://github.com/DaPotatoMan/vite-plugin-vue-dx/compare/v0.0.4-0...v0.0.4-1)
+
+### 🩹 Fixes
+
+- Build broken due to type infer issue ([43e84fd](https://github.com/DaPotatoMan/vite-plugin-vue-dx/commit/43e84fd))
+
+### ❤️ Contributors
+
+- Fahad ([@DaPotatoMan](https://github.com/DaPotatoMan))
+
 ## v0.0.4-0
 
 [compare changes](https://github.com/DaPotatoMan/vite-plugin-vue-dx/compare/v0.0.3...v0.0.4-0)
