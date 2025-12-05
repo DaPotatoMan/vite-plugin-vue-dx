@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v0.0.4-0
+
+[compare changes](https://github.com/DaPotatoMan/vite-plugin-vue-dx/compare/v0.0.3...v0.0.4-0)
+
+### 🚀 Enhancements
+
+- Lint before publishing ([c849b5a](https://github.com/DaPotatoMan/vite-plugin-vue-dx/commit/c849b5a))
+
+### 🩹 Fixes
+
+- Lint issues ([353f6d3](https://github.com/DaPotatoMan/vite-plugin-vue-dx/commit/353f6d3))
+
+### 🏡 Chore
+
+- Set pnpm version ([ca7e369](https://github.com/DaPotatoMan/vite-plugin-vue-dx/commit/ca7e369))
+- Update deps ([5e7849f](https://github.com/DaPotatoMan/vite-plugin-vue-dx/commit/5e7849f))
+- Update deps ([c41d01e](https://github.com/DaPotatoMan/vite-plugin-vue-dx/commit/c41d01e))
+
+### ❤️ Contributors
+
+- Fahad ([@DaPotatoMan](https://github.com/DaPotatoMan))
+
 ## v0.0.3
 
 [compare changes](https://github.com/DaPotatoMan/vite-plugin-vue-dx/compare/v0.0.2...v0.0.3)
