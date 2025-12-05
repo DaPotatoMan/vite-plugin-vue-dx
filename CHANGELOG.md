@@ -1,6 +1,10 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/DaPotatoMan/vite-plugin-vue-dx/compare/v0.0.4-1...v0.0.4)
+
 ## v0.0.4-1
 
 [compare changes](https://github.com/DaPotatoMan/vite-plugin-vue-dx/compare/v0.0.4-0...v0.0.4-1)
