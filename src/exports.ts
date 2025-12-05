@@ -31,3 +31,13 @@ export type ImportPresets = Parameters<typeof import('unplugin-auto-import')['de
 
 /** Improve font loading using {@link https://github.com/unjs/fontaine fontaine} */
 export const fontaine = FontaineTransform.vite
+
+export interface PluginConfigMap {
+  jsx: import('@vitejs/plugin-vue-jsx').Options
+  imports: import('unplugin-auto-import/types').Options
+  console: Parameters<typeof import('unplugin-turbo-console/vite')['default']>[0]
+  components: import('unplugin-vue-components/types').Options
+
+  devtools: import('vite-plugin-vue-devtools').VitePluginVueDevToolsOptions
+  fontaine: import('fontaine').FontaineTransformOptions
+}
